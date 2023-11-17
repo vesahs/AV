@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'QuincyCF';
+    src: url('Quincy/Fontspring-DEMO-quincycf-light.otf') format('opentype');
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont/Mont-ExtraLightDEMO.otf') format('opentype');
+  }
+@font-face {
+    font-family: 'MontBOLD';
+    src: url('Mont/Mont-HeavyDEMO.otf') format('opentype');
+}
+  
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: 'QuincyCF';
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a{
+    display: flex;
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform:uppercase;                              
+}
+
+.navbar a:hover {
+    color:#796B4A;
+    transition: 0.3s;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    background-image: url("images/BEIGE.png");
+    height: 500px;
+    width: 100%;
+    background-size: cover; /* e bon foton me fit into container, pa e pre */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.overlay {
+    /* text-align: left; */
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background: rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay h3 {
+    color: #796B4A;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.overlay span {
+    color: #000000; 
+    font-weight: normal;
+    font-size: 42px;
+}
+
+.overlay p {
+    margin-top: 10px;
+    color: #796B4A;
+    font-size: 17px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 8px 20px;
+    background-color: #796B4A;
+    color: #000000;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.btn:hover {
+    background-color: white; 
+}
+
+.columns {
+    text-align: center; /* i shtin t4ta kolonat nmes */
+    background-color: #F7F2ED;
+}
+
+.column {
+    display: inline-block;
+    width: 230px; /* Sa i don t'gjera kolonat */
+    margin: 17px; /* hapsira mes kolonave */
+    padding: 15px; 
+    text-align: center; /* secila kolon me i pas tekstet nmes t saj */
+    vertical-align: top;  /* i bon barabart tekstet neper kolona */
+}
+
+.column h3{
+    font-family: 'MontBOLD';
+    margin-top: 3px; /* hapsira mes icon edhe tekstit */
+}
+
+.column p{
+    font-family: 'Mont';
+    font-size: 13px;
+    font-weight: 600;
+}
