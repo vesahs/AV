@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'QuincyCF';
-    src: url('../Quincy/Fontspring-DEMO-quincycf-light.otf') format('opentype');
+    src: url('../Quincy/Fontspring-DEMO-quincycf-light.woff') format('woff');
   }
 @font-face {
     font-family: 'Mont';
@@ -14,7 +14,7 @@
 body{
     background-color: antiquewhite;
     margin: 0;
-    font-family: 'QuincyCF';
+    font-family: 'QuincyCF','Helvetica', 'Arial', sans-serif;
 }
 
 .header{
@@ -67,7 +67,7 @@ body{
     align-items: center;
     justify-content: center;
   }
-  
+
 .overlay {
     /* text-align: left; */
     font-size: 40px;
@@ -97,7 +97,7 @@ body{
 .overlay p {
     margin-top: 10px;
     color: #796B4A;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .btn {
@@ -105,8 +105,8 @@ body{
     padding: 8px 20px;
     background-color: transparent;
     color: #000000;
+    background-color: #9F8C76;
     border-radius: 5px;
-    border: 2px solid #796B4A;
     text-decoration: none;
     margin-top: 20px;
     transition: background-color 0.3s ease;
@@ -144,6 +144,47 @@ body{
 
 form h1 {
     justify-content: center;
+}
+
+  /* Used the same measurements just different pic */
+  .newproduct .thumbnail {
+    background-image: url('../images/newproduct.png');
+    height: 590px;
+  }
+
+  .newproduct .overlay{
+    justify-content: start;
+  }
+
+  .newproduct .new{
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+
+  .newproduct .overlay h3{
+    margin-top: 3px;
+  }
+
+  .newproduct .overlay .white-text{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .newproduct .icon {
+    display: inline-block;
+    vertical-align: middle; /* e bon tekstin inline me icon */
+    margin-right: 5px; /* Add some margin to create space between the icon and text */
+}
+
+.newproduct .icon-p{
+    font-family: 'Mont';
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: -6px; /* hapsira mes cdo teksti te posht */
+    font-size: 15px;
 }
 
 
