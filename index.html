@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>AV'S Skincare</title>
     <meta charset="UTF-8">
@@ -7,17 +8,22 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style/styles.css">
 </head>
+
 <body>
     <div class="header">
         <nav class="navbar">
+            <div class="close-icon" aria-label="Close Menu">&#10006;</div>
             <a href="index.html"><img src="images/headerlogo.png" alt="logo" width="150px"></a>
             <a href="index.html">Home</a>
-            <a href="#about">About us</a>
+            <a href="about.html">About us</a>
             <a href="#products">Products</a>
             <a href="#contact">Contact us</a>
             <a href="Login.html" class="btn">Log in</a>
         </nav>
     </div>
+
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776; Menu</button>
+
 
     <div class="home" id="home">
         <div class="thumbnail">
@@ -32,50 +38,154 @@
 
     <div class="columns">
         <div class="column">
-        <img src="icons/natural.png" alt="natural" width="125px">
-        <h3>Natural Ingredients</h3>
-        <p>From soothing botanical extracts to nourishing oils, each 
-            ingredient is chosen for its skin loving properties</p>
-    </div>
-    <div class="column">
-        <img src="icons/flagrance.png" alt="flagrancefree" width="125px">
-        <h3>Flagrance Free</h3>
-        <p>Enjoy skincare that is gentle and free from synthetic scents, 
-            perfect for even the most sensitive skin.</p>
-    </div>
-    <div class="column">
-        <img src="icons/allergy.png" alt="allergy" width="125px">
-        <h3>Allergy Tested</h3>
-        <p>Our products ensure they are gentle for all skin types, 
-            giving you the confidence to embrace your beauty worry free.</p>
-    </div>
-    <div class="column">
-        <img src="icons/paraben.png" alt="paraben" width="125px">
-        <h3>Paraben Free</h3>
-        <p>Your skin deserves only the best, which is why our products are free from parabens.
-             We believe in clean, healthy skincare without compromise.</p>
-    </div>
-</div>
-
-
-<section class="newproduct">
-    <div class="thumbnail">
-        <div class="overlay">
-            <p class="new">NEWEST ARRIVAL</p>
-            <h3>Deeply Nourishing<br>Serum For Glowing.</h3>
-            <span>Healthy Hair</span>
-            <p class="white-text">Our vegan hair serum is a cruelty free, plant powered <br>
-                elixir designed to nurture your locks with the goodness of nature.<br>
-                Say goodbye to harsh chemicals and hello to vibrant, luscious hair 
-                <br>that is as kind to the planet as it is to you.</p>
-                <p class="icon-p"><img class="icon" src="icons/smooth.png"alt="" width="40px">Strong and Smooth</p>
-                <p class="icon-p"><img class="icon" src="icons/vegan.png"alt="" width="40px">Purely Vegan</p>
-                <p class="icon-p"><img class="icon" src="icons/paraben2.png"alt="" width="40px">Paraben free</p>
-                <p class="icon-p"><img class="icon" src="icons/sulfate.png"alt="" width="40px">Sulfate free</p>
+            <img src="icons/natural.png" alt="natural" width="120px">
+            <h3>Natural Ingredients</h3>
+            <p>From soothing botanical extracts to nourishing oils, each
+                ingredient is chosen for its skin loving properties</p>
+        </div>
+        <div class="column">
+            <img src="icons/flagrance.png" alt="flagrancefree" width="120px">
+            <h3>Flagrance Free</h3>
+            <p>Enjoy skincare that is gentle and free from synthetic scents,
+                perfect for even the most sensitive skin.</p>
+        </div>
+        <div class="column">
+            <img src="icons/allergy.png" alt="allergy" width="120px">
+            <h3>Allergy Tested</h3>
+            <p>Our products ensure they are gentle for all skin types,
+                giving you the confidence to embrace your beauty worry free.</p>
+        </div>
+        <div class="column">
+            <img src="icons/paraben.png" alt="paraben" width="120px">
+            <h3>Paraben Free</h3>
+            <p>Your skin deserves only the best, which is why our products are free from parabens.
+                We believe in clean, healthy skincare without compromise.</p>
         </div>
     </div>
-    
-</section>
-    
+
+
+    <section class="newproduct">
+        <div class="thumbnail">
+            <div class="overlay">
+                <p class="new">NEWEST ARRIVAL</p>
+                <h3>Deeply Nourishing<br>Serum For Glowing,</h3>
+                <span>Healthy Skin</span>
+                <p class="white-text">Our vegan serum is a cruelty free, plant powered
+                    elixir designed to nurture your locks with the goodness of nature.
+                    Say goodbye to harsh chemicals and hello to vibrant, luscious skin
+                    that is as kind to the planet as it is to you.
+                </p>
+                <p class="icon-p"><img class="icon" src="icons/smooth.png" alt="" width="45px">Strong and Smooth</p>
+                <p class="icon-p"><img class="icon" src="icons/vegan.png" alt="" width="45px">Purely Vegan</p>
+                <p class="icon-p"><img class="icon" src="icons/paraben2.png" alt="" width="45px">Paraben free</p>
+                <p class="icon-p"><img class="icon" src="icons/sulfate.png" alt="" width="45px">Sulfate free</p>
+                <a href="#" class="btn">View all</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="signup">
+                <div class="wrapper">
+                    <form action="">
+                        <h1>Contact Form</h1>
+                        <h3>Write us a message: </h3>
+                        <div class="input-box">
+                            <input type="text" maxlength="10" placeholder="First name" required>
+                            <img class="icon" src="icons/1.png" alt="" width="25px">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" maxlength="10" placeholder="Last name" required>
+                            <img class="icon" src="icons/1.png" alt="" width="25px">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Email" required>
+                            <img class="icon" src="icons/3.png" alt="" width="25px">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Phone number" required>
+                            <img class="icon" src="icons/4.png" alt="" width="25px">
+                        </div>
+                        <div class="input-box message-input">
+                            <textarea placeholder="Enter your message:" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h2>Additional information</h2>
+                <div class="info-group">
+                    <h3>Address:</h3>
+                    <p>54 Cunningham Street, Joanna, Australia, 6236.</p>
+                </div>
+                <hr>
+                <div class="info-group">
+                    <h3>Phone:</h3>
+                    <p>+1 234 567 890</p>
+                </div>
+                <hr>
+                <div class="info-group">
+                    <h3>Email:</h3>
+                    <p>info@avproducts.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- permifooter Section -->
+    <div class="permifooter">
+        <div class="permifooter-left">
+            <img src="images/f1.png" alt="Insta Shop Image 1" width="200px">
+            <img src="images/f2.png" alt="Insta Shop Image 2" width="200px">
+        </div>
+        <div class="permifooter-center">
+            <span class="insta-shop">INSTA SHOP</span>
+            <h4>Tag us in your posts!</h4>
+            <p>For a chance to be featured on our page, tag us in your skincare selfies.
+                Plus, enjoy 10% off with your next purchase. [use code AURELIA12]
+                It's our way of saying thank you for being part of our skincare community!
+            </p>
+        </div>
+        <div class="permifooter-right">
+            <img src="images/f3.png" alt="Insta Shop Image 3" width="200px">
+            <img src="images/f4.png" alt="Insta Shop Image 4" width="200px">
+        </div>
+    </div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <img src="images/headerlogo.png" alt="Your Logo" width="200px">
+            <p>&copy; 2023 AV's. All Rights Reserved.</p>
+        </div>
+    <div class="footer-column">
+        <h4>Find us in:</h4>
+        <a href="#"><img src="icons/ig.png" alt="Instagram" width="40px"></a>
+        <a href="#"><img src="icons/fb.png" alt="Facebook" width="40px"></a>
+        <a href="#"><img src="icons/tw.png" alt="Twitter" width="40px"></a>
+    </div>
+    <div class="footer-column">
+        <h4>Contact Information</h4>
+        <p>Address: 54 Cunningham Street, Joanna, Australia, 6236.</p>
+        <p>Email: info@avproducts.com</p>
+        <p>Phone: +1 234 567 890</p>
+    </div>
+    <div class="footer-column">
+        <h4>Products</h4>
+        <p>Product1</p>
+        <p>Product2</p>
+        <p>Product3</p>
+    </div>
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
