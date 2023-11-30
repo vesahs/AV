@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('menu-open');
     });
 
-    closeIcon.addEventListener('click', function () {
+    closeIcon.addEventListener('click', function () { 
         document.body.classList.remove('menu-open');
     });
 
