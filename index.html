@@ -11,15 +11,26 @@
 
 <body>
     <div class="header">
-        <nav class="navbar">
-            <div class="close-icon" aria-label="Close Menu">&#10006;</div>
-            <a href="index.html"><img src="images/headerlogo.png" alt="logo" width="150px"></a>
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="#products">Products</a>
-            <a href="#contact">Contact us</a>
-            <a href="Login.html" class="btn">Log in</a>
-        </nav>
+        <div class="menu">
+            <nav class="navbar">
+                <div class="close-icon" aria-label="Close Menu">&#10006;</div>
+                <a href="index.html"><img src="images/headerlogo.png" alt="logo" width="150px"></a>
+                <ul>
+                <li><a href="index.html" id="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li>
+                <a href="#products">Products</a>
+                <ul>
+                    <li><a href="#produktet-moisturizers.html">Moisturizers</a></li>
+                    <li><a href="">test2</a></li>
+                    <li><a href="">test3</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+                <a href="Login.html" class="btn">Log in</a>
+            </nav>
+        </div>
     </div>
 
     <button class="menu-toggle" aria-label="Toggle Menu">&#9776; Menu</button>
@@ -93,23 +104,23 @@
                         <h1>Contact Form</h1>
                         <h3>Write us a message: </h3>
                         <div class="input-box">
-                            <input type="text" maxlength="10" placeholder="First name" required>
+                            <input type="text" maxlength="10" placeholder="First name" id="name" required>
                             <img class="icon" src="icons/1.png" alt="" width="25px">
                         </div>
                         <div class="input-box">
-                            <input type="text" maxlength="10" placeholder="Last name" required>
+                            <input type="text" maxlength="10" placeholder="Last name" id="surname" required>
                             <img class="icon" src="icons/1.png" alt="" width="25px">
                         </div>
                         <div class="input-box">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" placeholder="Email" id="email" required>
                             <img class="icon" src="icons/3.png" alt="" width="25px">
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Phone number" required>
+                            <input type="text" placeholder="Phone number" id="phone" required>
                             <img class="icon" src="icons/4.png" alt="" width="25px">
                         </div>
                         <div class="input-box message-input">
-                            <textarea placeholder="Enter your message:" required></textarea>
+                            <textarea placeholder="Enter your message:" id="message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Submit</button>
                     </form>
