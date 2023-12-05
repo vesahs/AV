@@ -15,3 +15,28 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.remove('menu-open');
     });
 });
+
+let usernameRegex = /^[A-Za-z][a-z]{2,8}$/;
+let passwordRegex = /^[A-Z][a-zA-Z0-9]$/;
+
+function validateForm() {
+    let usernameInput = document.getElementById('username');
+    let usernameError = document.getElementById('usernameError');
+    let passInput = document.getElementById('password');
+    let passError = document.getElementById('passError');
+
+
+    usernameError.innerText = '';
+    passError.innerText = '';
+
+    if (!usernameRegex.test(usernameInput.value)) {
+        usernameError.innerText = 'Invalid username';
+        return false;
+    }
+
+    if (!passwordRegex.test(passInput.value)) {
+        passError.innerText = 'Invalid password';
+        return false;
+    }
+    alert('Username and password was corect!');
+}
