@@ -11,37 +11,55 @@
 
 <body>
     <div class="header">
-        <nav class="navbar">
-            <div class="close-icon" aria-label="Close Menu">&#10006;</div>
-            <a href="index.html"><img src="images/headerlogo.png" alt="logo" width="150px"></a>
-            <a href="index.html" id="#home">Home</a>
-            <a href="about.html">About us</a>
-            <a href="#products">Products</a>
-            <a href="#contact">Contact us</a>
-            <a href="Login.html" class="btn">Log in</a>
-        </nav>
+        <div class="menu">
+            <nav class="navbar">
+                <div class="close-icon" aria-label="Close Menu">&#10006;</div>
+                <a href="index.html"><img src="images/headerlogo.png" alt="logo" width="150px"></a>
+                <ul>
+                <li><a href="index.html" id="#home">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li>
+                <a href="#">Products</a>
+                <ul>
+                    <li><a href="produktet-moisturizers.html">Moisturizers</a></li>
+                    <li><a href="produktet-toners.html">Toners</a></li>
+                    <li><a href="produktet-FaceWashes.html">Face Washes</a></li>
+                    <li><a href="produktet-Body.html">Body Care</a></li>
+                    <li><a href="Produktet-sets.html">Sets </a></li>
+                    <li><a href="produktet-sunscreens.html">Sunscreen</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+                <a href="Login.html" class="btn">Log in</a>
+            </nav>
+        </div>
     </div>
 
     <div class="signup">
     <div class="wrapper">
-        <form action="">
+        <form action="" method="get" onsubmit="return validateForm()">
             <h1>Sign Up</h1>
             <div class="input-box">
-                <input type="text" maxlength="10" placeholder="Username" required>
+                <input type="text" placeholder="Username" id="username">
+                <div class="error-message" id="usernameError"></div>
                 <img class="icon" src="icons/1.png" alt="" width="25px">
             </div>
             <div class="input-box">
-                <input type="password" minlength="6" maxlength="9" placeholder="Password" required>
+                <input type="password" placeholder="Password" id="password">
+                <div class="error-message" id="passError"></div>
                 <img class="icon" src="icons/2.png" alt="" width="25px">
             </div>
 
             <div class="input-box">
-                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="Email" id="email">
+                <div class="error-message" id="emailError"></div>
                 <img class="icon" src="icons/3.png" alt="" width="25px">
             </div>
 
             <div class="input-box">
-                <input type="text" placeholder="Phone number" required>
+                <input type="text" placeholder="Phone number" id="phone">
+                <div class="error-message" id="phoneError"></div>
                 <img class="icon" src="icons/4.png" alt="" width="25px">
             </div>
             <button type="submit" class="btn">Sign Up</button>
