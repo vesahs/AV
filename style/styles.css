@@ -415,13 +415,12 @@ footer {
       }
 
       /* PER CONTACT FORM */
-      .container {
-          flex-direction: column; 
-      }
+        .container {
+            flex-direction: column; 
+        }
   
       .signup,
       .contact-info {
-          width: 100%; 
           margin-bottom: 20px; 
       }
 
@@ -465,7 +464,6 @@ footer {
 
 
 .wrapper {
-    width: 420px;
     justify-content: center;
     background: #9F8C76;
     color: aliceblue;
@@ -573,8 +571,6 @@ a {
     background: #9F8C76;
 }
 
-
-
 .container {
     display: flex;
     justify-content: center; /* Center the contact information */
@@ -583,7 +579,6 @@ a {
 }
 
 .contact-info {
-    width: 40%; /* Adjust the width as needed */
     padding: 20px;
     box-sizing: border-box;
     background: #9F8C76;
