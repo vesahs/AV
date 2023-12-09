@@ -17,40 +17,42 @@
                 <a href="index.html"><img src="images/headerlogo.png" alt="logo" width="150px"></a>
                 <ul>
                 <li><a href="index.html" id="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
+                <li><a href="about.html">About us</a></li>
                 <li>
-                <a href="#products">Products</a>
+                <a href="#">Products</a>
                 <ul>
-                    <li><a href="#produktet-moisturizers.html">Moisturizers</a></li>
-                    <li><a href="">test2</a></li>
-                    <li><a href="">test3</a></li>
+                    <li><a href="produktet-moisturizers.html">Moisturizers</a></li>
+                    <li><a href="produktet-toners.html">Toners</a></li>
+                    <li><a href="produktet-FaceWashes.html">Face Washes</a></li>
+                    <li><a href="produktet-Body.html">Body Care</a></li>
+                    <li><a href="Produktet-sets.html">Sets </a></li>
+                    <li><a href="produktet-sunscreens.html">Sunscreen</a></li>
                     </ul>
                     </li>
                     <li><a href="#contact">Contact us</a></li>
                 </ul>
+                <a href="Login.html" class="btn">Log in</a>
             </nav>
         </div>
     </div>
-
     <div class="login">
     <div class="wrapper">
         <form action="">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Username" id="username" required>
+                <div class="error-message" id="usernameError"></div>
                 <img class="icon" src="icons/1.png" alt="" width="25px">
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <div class="error-message" id="passError"></div>
                 <img class="icon" src="icons/2.png" alt="" width="25px">
             </div>
 
             <div class="remember-forgot">
                 <div class="label">
                 <p><input type="checkbox">Remember me</p>
-                </div>
-                <div class="link">
-                    <a href="#">Forgot Password?</a>
                 </div>
             </div>
 
@@ -88,12 +90,15 @@
     </div>
     <div class="footer-column">
         <h4>Products</h4>
-        <p>Product1</p>
-        <p>Product2</p>
-        <p>Product3</p>
+        <p>Moisturizers</p>
+        <p>Toners</p>
+        <p>Face Washers</p>
+        <p>Body care</p>
+        <p>Sunscreen</p>
+        <p>Sets</p>
     </div>
     </div>
-    </footer>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
