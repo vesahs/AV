@@ -283,3 +283,23 @@ footer {
 .menu-toggle {
     display: none;
 }
+
+.footer-menu {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.footer-menu>ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: black;
+}
