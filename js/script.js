@@ -17,19 +17,32 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let usernameRegex = /^[A-Za-z.-_][a-z]{2,8}$/;
-let passwordRegex = /^[A-Z][a-zA-Z0-9]$/;
+let emailRegex = /^[a-zA-Z.-_]+@+[a-z]+\.+[a-z]{2,3}$/;
+let passwordRegex = /^[a-zA-Z0-9]+$/;
+let phoneRegex = /^[0-9]{0,14}$/;
 
 function validateForm() {
     let usernameInput = document.getElementById('username');
     let usernameError = document.getElementById('usernameError');
+    let emailInput = document.getElementById('email');
+    let emailError = document.getElementById('emailError');
     let passInput = document.getElementById('password');
     let passError = document.getElementById('passError');
+    let phoneInput = document.getElementById('phone');
+    let phoneError = document.getElementById('phoneError');
 
     usernameError.innerText = '';
+    emailError.innerText = '';
     passError.innerText = '';
+    phoneError.innerText = '';
 
     if (!usernameRegex.test(usernameInput.value)) {
         usernameError.innerText = 'Invalid username';
+        return false;
+    }
+
+    if (!emailRegex.test(emailInput.value)) {
+        emailError.innerText = 'Invalid email';
         return false;
     }
 
@@ -37,5 +50,10 @@ function validateForm() {
         passError.innerText = 'Invalid password';
         return false;
     }
-    alert('Username and password was corect!');
+    if (!phoneRegex.test(phoneInput.value)) {
+        phoneError.innerText = 'Invalid phone number';
+        return false;
+    }
+
+    alert('Name and email was corect!');
 }
