@@ -177,6 +177,7 @@ footer {
 
 .footer-columns {
     text-align: center;
+    justify-content: space-between;
     /* i shtin t4ta kolonat nmes */
 }
 
