@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('menu-open');
     });
 
-    closeIcon.addEventListener('click', function () { 
+    closeIcon.addEventListener('click', function () {
         document.body.classList.remove('menu-open');
     });
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-let usernameRegex = /^[A-Za-z][a-z]{2,8}$/;
+let usernameRegex = /^[A-Za-z.-_][a-z]{2,8}$/;
 let passwordRegex = /^[A-Z][a-zA-Z0-9]$/;
 
 function validateForm() {
@@ -24,7 +24,6 @@ function validateForm() {
     let usernameError = document.getElementById('usernameError');
     let passInput = document.getElementById('password');
     let passError = document.getElementById('passError');
-
 
     usernameError.innerText = '';
     passError.innerText = '';

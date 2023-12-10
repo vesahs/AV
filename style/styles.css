@@ -1,18 +1,20 @@
 @font-face {
     font-family: 'QuincyCF';
     src: url('../Quincy/Fontspring-DEMO-quincycf-light.woff') format('woff');
-  }
+}
+
 @font-face {
     font-family: 'Mont';
     src: url('../Mont/Mont-ExtraLightDEMO.otf') format('opentype');
-  }
+}
+
 @font-face {
     font-family: 'MontBOLD';
     src: url('../Mont/Mont-HeavyDEMO.otf') format('opentype');
 }
-  
 
-body{
+
+body {
     background-color: antiquewhite;
     margin: 0;
     font-family: 'QuincyCF', sans-serif;
@@ -22,7 +24,7 @@ body{
     display: flex;
 }
 
-.header .btn{
+.header .btn {
     margin-left: auto;
     align-self: center;
     justify-content: end;
@@ -40,13 +42,13 @@ body{
     list-style: none;
 }
 
-.navbar a{
+.navbar a {
     display: flex;
     margin: 15px;
     text-decoration: none;
     color: black;
     font-size: 15px;
-    text-transform:uppercase;                              
+    text-transform: uppercase;
 }
 
 
@@ -100,13 +102,14 @@ body{
     background-image: url('../images/BEIGE.png');
     height: 500px;
     width: 100%;
-    background-size: cover; /* e bon foton me fit into container, pa e pre */
+    background-size: cover;
+    /* e bon foton me fit into container, pa e pre */
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
 
 .overlay {
@@ -130,7 +133,7 @@ body{
 }
 
 .overlay span {
-    color: #000000; 
+    color: #000000;
     font-weight: normal;
     font-size: 42px;
 }
@@ -139,12 +142,12 @@ body{
     margin-top: 10px;
     color: #796B4A;
     font-size: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.white-text{
-    white-space: pre-line;   /* e bon textin wrap */
+.white-text {
+    white-space: pre-line;
+    /* e bon textin wrap */
 }
 
 .btn {
@@ -161,30 +164,36 @@ body{
 }
 
 .btn:hover {
-    background-color: white; 
+    background-color: white;
 }
 
 .columns {
-    text-align: center; /* i shtin t4ta kolonat nmes */
+    text-align: center;
+    /* i shtin t4ta kolonat nmes */
     background-color: #EFE6DC;
 }
 
 .column {
     display: inline-block;
-    width: 230px; /* Sa i don t'gjera kolonat */
-    margin: 17px; /* hapsira mes kolonave */
-    padding: 15px; 
-    text-align: center; /* secila kolon me i pas tekstet nmes t saj */
-    vertical-align: top;  /* i bon barabart tekstet neper kolona */
+    width: 230px;
+    /* Sa i don t'gjera kolonat */
+    margin: 17px;
+    /* hapsira mes kolonave */
+    padding: 15px;
+    text-align: center;
+    /* secila kolon me i pas tekstet nmes t saj */
+    vertical-align: top;
+    /* i bon barabart tekstet neper kolona */
 }
 
-.column h3{
+.column h3 {
     font-family: 'Mont';
     font-weight: 600;
-    margin-top: 3px; /* hapsira mes icon edhe tekstit */
+    margin-top: 3px;
+    /* hapsira mes icon edhe tekstit */
 }
 
-.column p{
+.column p {
     font-family: 'Mont';
     font-size: 13px;
     font-weight: 600;
@@ -194,82 +203,94 @@ form h1 {
     justify-content: center;
 }
 
-  /* NEWPRODUCT SECTION */
-  /* Used the same measurements just different pic */
-  .newproduct .thumbnail {
-    display:flex;
+/* NEWPRODUCT SECTION */
+/* Used the same measurements just different pic */
+.newproduct .thumbnail {
+    display: flex;
     background-image: url('../images/newproduct.png');
     height: 100%;
-  }
+}
 
-  .newproduct .overlay{
+.newproduct .overlay {
     justify-content: start;
-  }
+}
 
-  .newproduct .new{
+.newproduct .new {
     font-family: 'Arial';
     text-transform: capitalize;
     color: #000000;
     font-weight: 400;
     font-size: 16px;
     margin-top: 20px;
-  }
-
-  .newproduct .overlay h3{
-    margin-top: 1px;
-  }
-
-  .newproduct .overlay .white-text{
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .newproduct .icon {
-    display: inline-block;
-    vertical-align: middle; /* e bon tekstin inline me icon */
-    margin-right: 5px; /* space between the icon and text */
 }
 
-.newproduct .icon-p{
+.newproduct .overlay h3 {
+    margin-top: 1px;
+}
+
+.newproduct .overlay .white-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.newproduct .icon {
+    display: inline-block;
+    vertical-align: middle;
+    /* e bon tekstin inline me icon */
+    margin-right: 5px;
+    /* space between the icon and text */
+}
+
+.newproduct .icon-p {
     font-family: 'Mont';
     font-weight: 600;
     color: #000000;
-    margin-bottom: -6px; /* hapsira mes cdo teksti te posht */
+    margin-bottom: -6px;
+    /* hapsira mes cdo teksti te posht */
     font-size: 15.5px;
-} /* END NEWPRODUCT SECTION */
+}
+
+/* END NEWPRODUCT SECTION */
 
 
 
-  /* ABOUT SECTION */
-  .about{
+/* ABOUT SECTION */
+.about {
     background-color: antiquewhite;
-  }
-  .about .thumbnail{
+}
+
+.about .thumbnail {
     display: flex;
     background-image: url('../images/bg.jpg');
-  }
+}
 
 .about .overlay {
     padding: 20px;
     box-sizing: border-box;
 }
 
-.about .overlay .white-text{
+.about .overlay .white-text {
     font-size: 17px;
-    white-space: pre-line;   /* e bon textin wrap */
+    white-space: pre-line;
+    /* e bon textin wrap */
 }
-.about .overlay .black-text{
+
+.about .overlay .black-text {
     font-size: 17px;
-    white-space: pre-line;   /* e bon textin wrap */
+    white-space: pre-line;
+    /* e bon textin wrap */
 }
 
 .content {
     display: flex;
 }
+
 .text {
     flex: 1;
-    margin-left: 30px; /* Adjust the margin as needed */
+    margin-left: 30px;
+    /* Adjust the margin as needed */
 }
+
 .image img {
     max-width: 100%;
     height: 650px;
@@ -277,29 +298,32 @@ form h1 {
 
 /* E DYTAAAAA */
 .image-right {
-    order: 2; /* Change the order property to switch positions */
+    order: 2;
+    /* Change the order property to switch positions */
 }
+
 .image-right img {
     display: flex;
     max-width: 100%;
-    height: auto; 
-    max-width: 400px; 
+    height: auto;
+    max-width: 400px;
 }
-  /* END ABOUT SECTION */
+
+/* END ABOUT SECTION */
 
 
 /* Menu icon, currently not displayed */
 .menu-toggle {
-    display: none; 
+    display: none;
 }
 
 .close-icon {
     display: none;
-  }
+}
 
 
-  /*  FOOTER */
-  .permifooter {
+/*  FOOTER */
+.permifooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,7 +335,8 @@ form h1 {
 
 .permifooter-center {
     text-align: center;
-    flex: 1; /* Take remaining space in the center */
+    flex: 1;
+    /* Take remaining space in the center */
 }
 
 .permifooter p {
@@ -343,16 +368,21 @@ footer {
 }
 
 .footer-columns {
-    text-align: center; /* i shtin t4ta kolonat nmes */
+    text-align: center;
+    /* i shtin t4ta kolonat nmes */
 }
 
 .footer-column {
     display: inline-block;
-    width: 230px; /* Sa i don t'gjera kolonat */
-    margin: 17px; /* hapsira mes kolonave */
-    padding: 15px; 
-    text-align: center; /* secila kolon me i pas tekstet nmes t saj */
-    vertical-align: top;  /* i bon barabart tekstet neper kolona */
+    width: 230px;
+    /* Sa i don t'gjera kolonat */
+    margin: 17px;
+    /* hapsira mes kolonave */
+    padding: 15px;
+    text-align: center;
+    /* secila kolon me i pas tekstet nmes t saj */
+    vertical-align: top;
+    /* i bon barabart tekstet neper kolona */
 }
 
 .footer-column h4 {
@@ -364,7 +394,7 @@ footer {
     margin: 2px;
 }
 
-.footer-column a img{
+.footer-column a img {
     margin: 1px;
 }
 
@@ -373,16 +403,19 @@ footer {
     margin: 5px;
 }
 
-
+.menu {
+    width: 100%;
+}
 
 /* RESPONSIVE */
 @media only screen and (max-width: 767px) {
     .navbar {
-        display: none; /* kur osht ekrani shrinked, zhduket navbari */
+        display: none;
+        /* kur osht ekrani shrinked, zhduket navbari */
     }
 
     .menu-toggle {
-        display: block; 
+        display: block;
         font-size: 18px;
         cursor: pointer;
         background: none;
@@ -392,9 +425,9 @@ footer {
     }
 
     .menu-open .navbar {
-        display: flex; 
+        display: flex;
         flex-direction: column;
-        background-color: #F0E4D4; 
+        background-color: #F0E4D4;
         position: fixed;
         top: 0;
         left: 0;
@@ -406,27 +439,27 @@ footer {
         align-items: center;
         justify-content: center;
     }
-      
-      .menu-open .close-icon {
+
+    .menu-open .close-icon {
         display: block;
         font-size: 24px;
         cursor: pointer;
         align-self: flex-end;
-      }
+    }
 
-      /* PER CONTACT FORM */
-      .container {
-          flex-direction: column; 
-      }
-  
-      .signup,
-      .contact-info {
-          width: 100%; 
-          margin-bottom: 20px; 
-      }
+    /* PER CONTACT FORM */
+    .container {
+        flex-direction: column;
+    }
 
-      /* PER FOOTER */
-      .permifooter {
+    .signup,
+    .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* PER FOOTER */
+    .permifooter {
         flex-direction: column;
         text-align: center;
         padding: 20px;
@@ -453,11 +486,12 @@ footer {
 .signup,
 .login {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('../images/thumb.png') no-repeat; /* id of the body */
+    background: url('../images/thumb.png') no-repeat;
+    /* id of the body */
     background-size: cover;
     background-position: center;
     font-family: "Poppins", sans-serif;
@@ -482,7 +516,7 @@ form {
 }
 
 .input-box {
-    display:flex;
+    display: flex;
     align-items: center;
     border: 2px solid rgba(255, 255, 255, 255);
     border-radius: 40px;
@@ -499,11 +533,12 @@ form {
     color: #fff;
 }
 
-.input-box .icon{
+.input-box .icon {
     margin-left: 10px;
 }
 
-.input-box input::placeholder {   /* Username, password etc */
+.input-box input::placeholder {
+    /* Username, password etc */
     color: #fff;
 }
 
@@ -517,7 +552,8 @@ form {
 }
 
 .wrapper .btn {
-    margin-top: 10px;  /* i put it closer to the 'Forgot password" */
+    margin-top: 10px;
+    /* i put it closer to the 'Forgot password" */
     width: 100%;
     height: 45px;
     background: #fff;
@@ -527,7 +563,7 @@ form {
     cursor: pointer;
 }
 
-.wrapper .btn:hover{
+.wrapper .btn:hover {
     background-color: transparent;
 }
 
@@ -553,7 +589,8 @@ a {
 
 .message-input textarea {
     width: 100%;
-    height: 120px; /* Adjust the height as needed */
+    height: 120px;
+    /* Adjust the height as needed */
     background: transparent;
     border: none;
     outline: none;
@@ -568,7 +605,7 @@ a {
 
 
 /* CONTACT US */
-.contact .signup{
+.contact .signup {
     align-items: flex-start;
     background: #9F8C76;
 }
@@ -577,20 +614,22 @@ a {
 
 .container {
     display: flex;
-    justify-content: center; /* Center the contact information */
+    justify-content: center;
+    /* Center the contact information */
     align-items: center;
     background-color: #9F8C76;
 }
 
 .contact-info {
-    width: 40%; /* Adjust the width as needed */
+    width: 40%;
+    /* Adjust the width as needed */
     padding: 20px;
     box-sizing: border-box;
     background: #9F8C76;
     color: aliceblue;
     border-radius: 10px;
     margin-left: 30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .info-group h3 {

@@ -84,7 +84,7 @@ body {
     border-bottom: 2px dotted
 }
 
-.product-description p{
+.product-description p {
     white-space: pre-line;
     font-family: 'Segoe UI';
 }
@@ -101,7 +101,7 @@ h3 {
 
 p {
     text-align: center;
-    line-break: anywhere;
+    line-break: auto;
 }
 
 .title-price {
@@ -117,7 +117,7 @@ p {
     width: 100%;
     align-items: center;
     flex-direction: column;
-    background-color: #FCFBF4 ;
+    background-color: #FCFBF4;
 }
 
 .page-title {
@@ -167,4 +167,46 @@ p {
 
 .logo {
     margin: 15px;
+}
+
+footer {
+    background-color: #F0E4D4;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-columns {
+    text-align: center;
+    /* i shtin t4ta kolonat nmes */
+}
+
+.footer-column {
+    display: inline-block;
+    width: 230px;
+    /* Sa i don t'gjera kolonat */
+    margin: 17px;
+    /* hapsira mes kolonave */
+    padding: 15px;
+    text-align: center;
+    /* secila kolon me i pas tekstet nmes t saj */
+    vertical-align: top;
+    /* i bon barabart tekstet neper kolona */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-column img {
+    margin: 2px;
+}
+
+.footer-column a img {
+    margin: 1px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 5px;
 }
