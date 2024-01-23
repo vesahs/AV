@@ -5,7 +5,7 @@
 
     <title>Produktet-Body Care</title>
     <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico">
-    <link rel="stylesheet" href="./style/products.css">
+    <link rel="stylesheet" href="./resources/style/products.css">
 </head>
 
 <body>

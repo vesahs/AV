@@ -5,8 +5,8 @@
     <title>AV'S Skincare</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../resources/images/favicon.ico">
-    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico">
+    <link rel="stylesheet" href="./resources/style/styles.css">
 </head>
 
 <body>

@@ -50,7 +50,7 @@
 </footer>
 
 
-<script src="./js/script.js"></script>
+<script src="./resources/js/script.js"></script>
 </body>
 
 </html>
