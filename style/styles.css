@@ -671,3 +671,7 @@ hr {
 .li_active>a {
     color: white;
 }
+
+.page-notfound {
+    text-align: center;
+}

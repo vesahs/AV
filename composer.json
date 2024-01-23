@@ -1,0 +1,15 @@
+{
+    "name": "aurora/av",
+    "autoload": {
+        "psr-4": {
+            "Aurora\\Av\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aurora",
+            "email": "auroraselmanajjjj@gmail.com"
+        }
+    ],
+    "require": {}
+}

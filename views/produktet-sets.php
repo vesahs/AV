@@ -1,4 +1,4 @@
-<?php require'./partials/productsHeader.php' ?>
+<?php require './views/partials/productsHeader.php' ?>
 
 <div class="main-content">
     <div class="page-title">
@@ -48,4 +48,4 @@
 
 </div>
 
-<?php require'./partials/productsFooter.php' ?>
+<?php require './views/partials/productsFooter.php' ?>

@@ -1,6 +1,4 @@
 <?php
-require'../config/Database.php';
-
 class Products
 {
 
@@ -13,7 +11,7 @@ class Products
 
     public function __construct()
     {
-        $this->db = new Database();
+        $this->db = new DatabaseConnection();
     }
 
     public function fetchAll()
@@ -22,5 +20,3 @@ class Products
     }
 
 }
-
-?>

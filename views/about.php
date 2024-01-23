@@ -1,4 +1,4 @@
-<?php require '../views/partials/header.php' ?>
+<?php require './views/partials/header.php' ?>
 
 <div class="about" id="about">
     <div class="thumbnail">
