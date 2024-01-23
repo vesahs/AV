@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'QuincyCF';
-    src: url('../Quincy/Fontspring-DEMO-quincycf-light.woff') format('woff');
+    src: url('../resources/fonts/Quincy/Fontspring-DEMO-quincycf-light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Mont';
-    src: url('../Mont/Mont-ExtraLightDEMO.otf') format('opentype');
+    src: url('../resources/fonts/Mont/Mont-ExtraLightDEMO.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'MontBOLD';
-    src: url('../Mont/Mont-HeavyDEMO.otf') format('opentype');
+    src: url('../resources/fonts/Mont/Mont-HeavyDEMO.otf') format('opentype');
 }
 
 div {
@@ -71,12 +71,16 @@ body {
     border-radius: 15px;
 }
 
+
 .row {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     padding: 5px;
     width: 70%;
     justify-content: space-evenly;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
+    gap: 20px;
+
 }
 
 .product {
@@ -307,4 +311,13 @@ footer {
 
 .product .image:hover {
     transform: translateY(-10px);
+}
+
+.li_active {
+    box-shadow: 1px 1px 1px black;
+    background-color: #9F8C76;
+}
+
+.li_active>a {
+    color: white;
 }

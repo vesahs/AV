@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'QuincyCF';
-    src: url('../Quincy/Fontspring-DEMO-quincycf-light.woff') format('woff');
+    src: url('../resources/fonts/Quincy/Fontspring-DEMO-quincycf-light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Mont';
-    src: url('../Mont/Mont-ExtraLightDEMO.otf') format('opentype');
+    src: url('../resources/fonts/Mont/Mont-ExtraLightDEMO.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'MontBOLD';
-    src: url('../Mont/Mont-HeavyDEMO.otf') format('opentype');
+    src: url('../resources/fonts/Mont/Mont-HeavyDEMO.otf') format('opentype');
 }
 
 
@@ -99,7 +99,7 @@ body {
 }
 
 .thumbnail {
-    background-image: url('../images/BEIGE.png');
+    background-image: url('../resources/images/BEIGE.png');
     height: 500px;
     width: 100%;
     background-size: cover;
@@ -207,7 +207,7 @@ form h1 {
 /* Used the same measurements just different pic */
 .newproduct .thumbnail {
     display: flex;
-    background-image: url('../images/newproduct.png');
+    background-image: url('../resources/images/newproduct.png');
     height: 100%;
 }
 
@@ -261,7 +261,7 @@ form h1 {
 
 .about .thumbnail {
     display: flex;
-    background-image: url('../images/bg.jpg');
+    background-image: url('../resources/images/bg.jpg');
 }
 
 .about .overlay {
@@ -490,7 +490,7 @@ footer {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('../images/thumb.png') no-repeat;
+    background: url('../resources/images/thumb.png') no-repeat;
     /* id of the body */
     background-size: cover;
     background-position: center;
@@ -661,4 +661,13 @@ hr {
     padding: 15px;
     border: 1px solid;
     box-shadow: 3px 2px 1px black;
+}
+
+.li_active {
+    box-shadow: 1px 1px 1px black;
+    background-color: #9F8C76;
+}
+
+.li_active>a {
+    color: white;
 }
