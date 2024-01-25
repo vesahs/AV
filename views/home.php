@@ -7,7 +7,7 @@
                     <h3>Unlock your <br>skins radiance,</h3>
                     <span>naturally</span>
                     <p class="white-text">Unveiling the timeless elegance of<br>natural beauty, one skin at a time</p>
-                    <a href="#" class="btn">Products</a>
+                    <a href="produktet-moisturizers" class="btn">Products</a>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image: url('resources/images/BEIGE2.png');">
@@ -15,7 +15,6 @@
                     <h3>Embrace your <br>natural beauty</h3>
                     <span>through</span>
                     <p class="white-text">It's like giving your skin a daily dose <br>of pure nourishment and care.</p>
-                    <a href="#" class="btn">Products</a>
                 </div>
             </div>
         <div class="swiper-pagination"></div>
