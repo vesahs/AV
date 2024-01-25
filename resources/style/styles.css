@@ -160,16 +160,16 @@ body {
     width: 20px;
     height: 5px;
     color: #000;
-    top: auto; 
-    bottom: 25px; 
+    top: auto;
+    bottom: 25px;
 }
 
 .swiper-pagination-bullet {
-    background: #000; 
+    background: #000;
 }
 
 .swiper-pagination-bullet-active {
-    background: #fff; 
+    background: #fff;
 }
 
 .white-text {
@@ -675,6 +675,7 @@ hr {
 
 .navbar ul li:hover {
     box-shadow: 1px 1px 1px black;
+    z-index: 2;
 }
 
 .navbar ul li:hover ul {

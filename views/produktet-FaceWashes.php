@@ -1,14 +1,15 @@
-<?php require './views/partials/productsHeader.php' ?>
+<?php 
+$productetFaceWashes = new Products();
+require './views/partials/productsHeader.php' ?>
 
 <div class="main-content">
     <div class="page-title">
-        <h2>Face Washes</h2>
+        <h2><?= $productetFaceWashes->pageTitle ?></h2>
     </div>
     <div class="row">
         <div class="product">
             <div class="image">
-                <img src="../resources/images/FaceWashForAcneOilySkin.png" alt="FaceWashForAcneOilySkin" class="img">
-
+                <img src="./resources/<?= $product['image']?>.png" alt="<?= $product['image']?>" class="img">
             </div>
             <div class="description">
                 <div class="title-price">
