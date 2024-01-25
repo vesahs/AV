@@ -31,6 +31,8 @@
                         </ul>
                     </li>
                     <li><a href="index#contact" id="#contact">Contact us</a></li>
+                    <li class="<?= urlActive('dashboard') ? 'li_active': '' ; ?>"><a href="dashboard" id="home">Dashboard</a></li>
+
                 </ul>
             </nav>
         </div>

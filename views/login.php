@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../resources/images/favicon.ico">
-    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./resources/style/styles.css">
     <title>Login</title>
 </head>
 
@@ -38,14 +38,14 @@
                         <p>Don't have an account?</p>
                     </div>
                     <div class="link">
-                        <a href="regjistrohu.php">Regjistrohu</a>
+                        <a href="regjistrohu">Regjistrohu</a>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="./js/script.js">
+    <script src="./resources/js/script.js">
 
     </script>
 </body>

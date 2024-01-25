@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./resources/images/favicon.ico">
-    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="./resources/style/styles.css">
     <title>Regjistrohu</title>
 </head>
 
@@ -43,7 +43,7 @@
                         <p>I have an account?</p>
                     </div>
                     <div class="link">
-                        <a href="login.php">Login</a>
+                        <a href="login">Login</a>
                     </div>
                 </div>
             </form>

@@ -10,7 +10,9 @@ $routes = [
     '/produktet-FaceWashes'=> './views/produktet-FaceWashes.php',
     '/produktet-Body'=> './views/produktet-Body.php',
     '/produktet-sets'=> './views/produktet-sets.php',
-    '/produktet-sunscreens' => './views/produktet-sunscreens.php'
+    '/produktet-sunscreens' => './views/produktet-sunscreens.php',
+    '/login' => './views/login.php',
+    '/regjistrohu' => './views/regjistrohu.php',
 ];
 
 if(array_key_exists($uri,$routes)) {

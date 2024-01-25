@@ -29,9 +29,10 @@
                             <li class="<?= urlActive('produktet-sunscreens') ? 'li_active': '' ; ?>"><a href="produktet-sunscreens">Sunscreen</a></li>
                         </ul>
                     </li>
-                    <li><a href="index.php#contact" id="#contact">Contact us</a></li>
+                    <li><a href="index#contact" id="#contact">Contact us</a></li>
+                    <li class="<?= urlActive('dashboard') ? 'li_active': '' ; ?>"><a href="dashboard" id="home">Dashboard</a></li>
                 </ul>
-                <a href="login.php" class="btn">Log in</a>
+                <a href="login" class="btn">Log in</a>
             </nav>
         </div>
     </div>
