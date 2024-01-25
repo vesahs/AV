@@ -99,7 +99,7 @@ body {
 }
 
 .thumbnail {
-    background-image: url('../images/BEIGE.png');
+    /* background-image: url('../images/BEIGE.png'); */
     height: 500px;
     width: 100%;
     background-size: cover;
@@ -111,6 +111,16 @@ body {
     justify-content: center;
 }
 
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
 
 .overlay {
     /* text-align: left; */
@@ -143,6 +153,23 @@ body {
     color: #796B4A;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 20px;
+    height: 5px;
+    color: #000;
+    top: auto; 
+    bottom: 25px; 
+}
+
+.swiper-pagination-bullet {
+    background: #000; 
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff; 
 }
 
 .white-text {

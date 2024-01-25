@@ -50,6 +50,8 @@
 </footer>
 
 
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./resources/js/script.js"></script>
 </body>
 

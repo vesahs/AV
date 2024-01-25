@@ -57,3 +57,23 @@ function validateForm() {
 
     alert('Name and email was corect!');
 }
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    loop: true,
+    effect: 'fade',
+    speed: 1000,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+

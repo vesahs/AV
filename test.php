@@ -1,6 +1,13 @@
-<?php  require './views/partials/header.php' ?>
-
-<div class="swiper-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="resources/style/styles.css">
+</head>
+<body>
+    <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('resources/images/BEIGE.png');">
                 <div class="overlay">
@@ -75,6 +82,11 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
+    
 <?php require './views/partials/contact.php' ?>
 <?php require './views/partials/footer.php' ?>
+</body>
+</html>
