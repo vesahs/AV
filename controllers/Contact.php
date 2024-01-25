@@ -4,10 +4,10 @@ class Contact {
     public $forma;
     public $db;
     public function __construct() {
-            $this->forma = $_POST;
-            $this->db = connectDb();
-            $this->ruajFormen();
-        }
+        $this->forma = $_POST;
+        $this->db = connectDb();
+        $this->ruajFormen();
+    }
 
     public function ruajFormen() {
         $query = 'INSERT INTO contact_us (';

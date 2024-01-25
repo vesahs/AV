@@ -13,7 +13,7 @@ $routes = [
     '/produktet-sets'=> './views/produktet-sets.php',
     '/produktet-sunscreens' => './views/produktet-sunscreens.php',
     '/login' => './views/login.php',
-    '/regjistrohu' => './views/regjistrohu.php',
+    '/regjistrohu' => './controllers/Regjistrohu.php',
 ];
 
 if(array_key_exists($uri,$routes)) {

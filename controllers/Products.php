@@ -4,9 +4,9 @@ class Products {
     public $productPages = [
         '/produktet-moisturizers' => 'Moisturizers',
         '/produktet-toners' => 'Toners',
-        '/produktet-FaceWashes'=> 'Face Washes',
-        '/produktet-Body'=>'Body Care',
-        '/produktet-sets'=> 'SkinCare Sets',
+        '/produktet-FaceWashes'=> 'FaceWashes',
+        '/produktet-Body'=>'BodyCare',
+        '/produktet-sets'=> 'SkinCareSets',
         '/produktet-sunscreens'=>'Sunscreen',
     ];
     public $pageTitle;

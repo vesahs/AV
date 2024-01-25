@@ -8,28 +8,25 @@
         <h2><?= $productetToners->pageTitle ?> </h2>
     </div>
     <div class="row">
-        <?php foreach($productetToners->getProductsByCategory)?>
+        <?php foreach($productetToners->getProductsByCategory('Toners') as $product) {?>
         <div class="product">
             <div class="image">
-                <img src="" alt="TonerForOilySkin" class="img">
+                <img src="<?= $product['image'] ?>" alt="TonerForOilySkin" class="img">
             </div>
             <div class="description">
                 <div class="title-price">
                     <div class="title">
-                        <h3>Toner For Oily Skin</h3>
+                        <h3><?= $product['title']?></h3>
                     </div>
                     <div class="price">
-                        <p><b>Price:</b> 12€</p>
+                        <p><b>Price:</b> <?= $product['price'] ?> €</p>
                     </div>
                 </div>
                 <div class="product-description"></div>
-                <p>
-                    This toner for oily skin helps to remove excess oil and visibly reduce the look of pores.
-                    Formulated with micro-exfoliating lipo-hydroxy acid, this oily skin toner refines skin texture,
-                    and unblocks and tightens pores.
-                </p>
+                <p><?= $product['decription']?></p>
             </div>
         </div>
+        <?php } ?>
     </div>
 </div>
 

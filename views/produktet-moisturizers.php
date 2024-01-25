@@ -11,7 +11,7 @@
         <?php foreach($productetMoist->getProductsByCategory('Moisturizers') as $product) { ?>    
         <div class="product">
             <div class="image">
-                <img src="./resources/<?= $product['image']?>.png" alt="<?= $product['image']?>" class="img">
+                <img src="<?= $product['image']?>" alt="<?= $product['image']?>" class="img">
             </div>
             <div class="description">
                 <div class="title-price">
@@ -19,7 +19,7 @@
                         <h3><?= $product['title']?></h3>
                     </div>
                     <div class="price">
-                        <p><b>Price:</b><?= $product['price']?></p>
+                        <p><b>Price:</b><?= $product['price']?> €</p>
                     </div>
                 </div>
                 <div class="product-description"></div>
