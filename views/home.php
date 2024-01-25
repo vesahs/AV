@@ -69,7 +69,7 @@
                 <p class="icon-p"><img class="icon" src="./resources/icons/paraben2.png" alt="" width="45px">Paraben free
                 </p>
                 <p class="icon-p"><img class="icon" src="./resources/icons/sulfate.png" alt="" width="45px">Sulfate free</p>
-                <a href="#" class="btn">View all</a>
+                <a href="produktet-moisturizers" class="btn">View all</a>
             </div>
         </div>
     </section>
