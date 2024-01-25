@@ -5,6 +5,7 @@ $routes = [
     '/' => './controllers/Home.php',
     '/index' => './controllers/Home.php',
     '/about' => './controllers/About.php',
+    '/contact'=>'./controllers/Contact.php',
     '/produktet-moisturizers'=> './views/produktet-moisturizers.php',
     '/produktet-toners' => './views/produktet-toners.php',
     '/produktet-FaceWashes'=> './views/produktet-FaceWashes.php',
