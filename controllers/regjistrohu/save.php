@@ -36,7 +36,7 @@ if($result) {
 
 if(!empty($errors)){
     view('./views/regjistrohu.view.php', [
-        'errors' => $errors
+        'errors' => $errors,
     ]);
 } else {
     $db->query("INSERT INTO users(username, password, email, phone, role) VALUES ('{$user['username']}', '{$user['password']}', '{$user['email']}', {$user['phone']}, 'basic')");

@@ -14,8 +14,9 @@
         <div class="wrapper">
             <form method="POST" onsubmit="//return validateForm()">
                 <h1>Sign Up</h1>
+                <?php //dd($user);?>
                 <div class="input-box">
-                    <input name="username" placeholder="Username" id="username">
+                    <input value="<?= isset($user) ? $user['username'] : '' ?>" name="username" placeholder="Username" id="username">
                     <div class="error-message" id="usernameError"></div>
                     <img class="icon" src="./resources/icons/1.png" alt="" width="25px">
                 </div>
@@ -25,7 +26,7 @@
                 </div>
                 <?php endif; ?>
                 <div class="input-box">
-                    <input type="password" name="password" placeholder="Password" id="password">
+                    <input value="<?= isset($user) ? $user['password'] : '' ?>" type="password" name="password" placeholder="Password" id="password">
                     <div class="error-message" id="passError"></div>
                     <img class="icon" src="./resources/icons/2.png" alt="" width="25px">
                 </div>
@@ -35,7 +36,7 @@
                 </div>
                 <?php endif; ?>
                 <div class="input-box">
-                    <input name="email" placeholder="Email" id="email">
+                    <input value="<?= isset($user) ? $user['email'] : '' ?>" name="email" placeholder="Email" id="email">
                     <div class="error-message" id="emailError"></div>
                     <img class="icon" src="./resources/icons/3.png" alt="" width="25px">
                 </div>
@@ -45,7 +46,7 @@
                 </div>
                 <?php endif; ?>
                 <div class="input-box">
-                    <input name="phone" placeholder="Phone number" id="phone">
+                    <input value="<?= isset($user) ? $user['phone'] : '' ?>" name="phone" placeholder="Phone number" id="phone">
                     <div class="error-message" id="phoneError"></div>
                     <img class="icon" src="./resources/icons/4.png" alt="" width="25px">
                 </div>

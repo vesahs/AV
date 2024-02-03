@@ -26,9 +26,9 @@ function connectDb() {
 
 function abort($error = 404){
     if($error === 404) {
-        require './views/404.php';
+        require './views/404.view.php';
     } else if ($error === 403) {
-        require './views/403.php';
+        require './views/403.view.php';
     }
     die();
 }
@@ -42,4 +42,11 @@ function authorize($condition, $status = RESPONSE::FOEBIDDEN) {
 function view($path, $attributes = []) {
     extract($attributes);
     require $path;
+}
+
+function discount($price) {
+        $halftPrice = $price / 2;
+        $discount = rand(1, intval($halftPrice));
+        $discountPrice = intval($price) - $discount;
+    return $discountPrice; 
 }

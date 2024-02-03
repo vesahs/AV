@@ -22,4 +22,11 @@ $products = $db->query("SELECT * FROM products WHERE category = :category",
     [":category" => $pageTitle]
 )->findAll();
 
+if(isset($_SESSION['user'])) {
+    $length = count($products);
+    for($i = 0; $i<$length; $i+=2){
+        $products[$i]['discountprice'] = discount($products[$i]['price']);
+    }
+}
+
 require "./views/{$path}.view.php";

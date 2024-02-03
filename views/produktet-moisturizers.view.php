@@ -19,6 +19,11 @@ require './views/partials/productsHeader.php' ?>
                     <div class="price">
                         <p><b>Price:</b><?= $product['price']?> €</p>
                     </div>
+                    <?php if(isset($product['discountprice'])) :?>
+                    <div class="price">
+                        <p><b>Sales: </b><?= $product['discountprice']?> €</p>
+                    </div>
+                    <?php endif; ?>
                 </div>
                 <div class="product-description"></div>
                 <p><?= $product['decription']?></p>

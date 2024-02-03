@@ -41,7 +41,7 @@ $router->patch('/product-edit', $productsBaseDirectory. '/update.php')->only('ad
  * Dashboard Contact CRUD
  */
 
-$router->get('/contacts', './controllers/contacts/show.php');
+$router->get('/contacts', './controllers/contacts/show.php')->only('admin');
 $router->post('/index', './controllers/contacts/create.php');
-$router->delete('/contacts', './controllers/contacts/delete.php');
+$router->delete('/contacts', './controllers/contacts/delete.php')->only('admin');
 
