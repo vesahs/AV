@@ -492,3 +492,23 @@ h3>a {
     width: 60px;
     text-align: center;
 }
+
+.menu {
+    width: 100%;
+}
+
+.navbar>a {
+    display: flex;
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+.navbar>.btn {
+    background-color: #9F8C76;
+    border-radius: 5px;
+    padding: 8px 20px
+}

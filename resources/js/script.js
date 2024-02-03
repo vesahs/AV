@@ -28,7 +28,6 @@ let passwordRegex = /^[a-zA-Z0-9]+$/;
 let phoneRegex = /^[0-9]{0,14}$/;
 
 function validateForm() {
-    console.log("hini qetu ");
     let usernameInput = document.getElementById('username');
     let usernameError = document.getElementById('usernameError');
     let emailInput = document.getElementById('email');
@@ -66,7 +65,6 @@ function validateForm() {
 }
 
 if (document.querySelector('.swiper-container')) {
-    console.log("hini te swiperi");
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         loop: true,

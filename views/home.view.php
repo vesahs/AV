@@ -4,17 +4,17 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('resources/images/BEIGE.png');">
                 <div class="overlay">
-                    <h3>Unlock your <br>skins radiance,</h3>
-                    <span>naturally</span>
-                    <p class="white-text">Unveiling the timeless elegance of<br>natural beauty, one skin at a time</p>
+                    <h3><?= $content['firstSectionFirstTitle'] ?></h3>
+                    <span><?= $content['firstSectionFirstSpan'] ?></span>
+                    <p class="white-text"><?= $content['firstSectionFirstParagraph'] ?></p>
                     <a href="produktet-moisturizers" class="btn">Products</a>
                 </div>
             </div>
             <div class="swiper-slide" style="background-image: url('resources/images/BEIGE2.png');">
                 <div class="overlay">
-                    <h3>Embrace your <br>natural beauty</h3>
-                    <span>through</span>
-                    <p class="white-text">It's like giving your skin a daily dose <br>of pure nourishment and care.</p>
+                    <h3><?= $content['firstSectionSecondTitle'] ?></h3>
+                    <span><?= $content['firstSectionSecondSpan'] ?></span>
+                    <p class="white-text"><?= $content['firstSectionSecondParagraph'] ?></p>
                 </div>
             </div>
         <div class="swiper-pagination"></div>
@@ -27,27 +27,23 @@
     <div class="columns">
         <div class="column">
             <img src="./resources/icons/natural.png" alt="natural" width="120px">
-            <h3>Natural Ingredients</h3>
-            <p>From soothing botanical extracts to nourishing oils, each
-                ingredient is chosen for its skin loving properties</p>
+            <h3><?= $content['sectionTwoFirstTitle'] ?></h3>
+            <p><?= $content['sectionTwoFirstParagraph'] ?></p>
         </div>
         <div class="column">
             <img src="./resources/icons/flagrance.png" alt="flagrancefree" width="120px">
-            <h3>Flagrance Free</h3>
-            <p>Enjoy skincare that is gentle and free from synthetic scents,
-                perfect for even the most sensitive skin.</p>
+            <h3><?= $content['sectionTwoSecondTitle'] ?></h3>
+            <p><?= $content['sectionTwoSecondParagraph'] ?></p>
         </div>
         <div class="column">
             <img src="./resources/icons/allergy.png" alt="allergy" width="120px">
-            <h3>Allergy Tested</h3>
-            <p>Our products ensure they are gentle for all skin types,
-                giving you the confidence to embrace your beauty worry free.</p>
+            <h3><?= $content['sectionTwoThirdTitle'] ?></h3>
+            <p><?= $content['sectionTwoThirdParagraph'] ?></p>
         </div>
         <div class="column">
             <img src="./resources/icons/paraben.png" alt="paraben" width="120px">
-            <h3>Paraben Free</h3>
-            <p>Your skin deserves only the best, which is why our products are free from parabens.
-                We believe in clean, healthy skincare without compromise.</p>
+            <h3><?= $content['sectionTwoFourthTitle'] ?></h3>
+            <p><?= $content['sectionTwoFourthParagraph'] ?></p>
         </div>
     </div>
     
@@ -55,20 +51,17 @@
     <section class="newproduct">
         <div class="thumbnail">
             <div class="overlay">
-                <p class="new">NEWEST ARRIVAL</p>
-                <h3>Deeply Nourishing<br>Serum For Glowing,</h3>
-                <span>Healthy Skin</span>
-                <p class="white-text">Our vegan serum is a cruelty free, plant powered
-                    elixir designed to nurture your locks with the goodness of nature.
-                    Say goodbye to harsh chemicals and hello to vibrant, luscious skin
-                    that is as kind to the planet as it is to you.
+                <p class="new"><?= $content['sectionThreeFirstParagraph'] ?></p>
+                <h3><?= $content['sectionThreeFirstTitle'] ?></h3>
+                <span><?= $content['sectionThreeFirstSpan'] ?></span>
+                <p class="white-text"><?= $content['sectionThreeSecondParagraph'] ?>
                 </p>
-                <p class="icon-p"><img class="icon" src="./resources/icons/smooth.png" alt="" width="45px">Strong and Smooth
+                <p class="icon-p"><img class="icon" src="./resources/icons/smooth.png" alt="" width="45px"><?= $content['sectionThreeThirdParagraph'] ?>
                 </p>
-                <p class="icon-p"><img class="icon" src="./resources/icons/vegan.png" alt="" width="45px">Purely Vegan</p>
-                <p class="icon-p"><img class="icon" src="./resources/icons/paraben2.png" alt="" width="45px">Paraben free
+                <p class="icon-p"><img class="icon" src="./resources/icons/vegan.png" alt="" width="45px"><?= $content['sectionThreeFourthParagraph'] ?></p>
+                <p class="icon-p"><img class="icon" src="./resources/icons/paraben2.png" alt="" width="45px"><?= $content['sectionThreeFifthParagraph'] ?>
                 </p>
-                <p class="icon-p"><img class="icon" src="./resources/icons/sulfate.png" alt="" width="45px">Sulfate free</p>
+                <p class="icon-p"><img class="icon" src="./resources/icons/sulfate.png" alt="" width="45px"><?= $content['sectionThreeSixthParagraph'] ?></p>
                 <a href="produktet-moisturizers" class="btn">View all</a>
             </div>
         </div>
