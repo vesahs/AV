@@ -470,3 +470,25 @@ th {
     margin-inline-start: 25px;
     color: red;
 }
+
+h3>a {
+    text-decoration: none;
+    color: unset;
+}
+
+.delete-button {
+    border-radius: 13px;
+}
+
+.edit-parent {
+    margin: 15px;
+}
+
+.edit-button {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 17px;
+    color: black;
+    width: 60px;
+    text-align: center;
+}

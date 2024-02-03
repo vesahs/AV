@@ -19,11 +19,11 @@ require './views/partials/productsHeader.php' ?>
                             <form method="POST">
                                 <input type="hidden" name="_method" value="DELETE">
                                 <input type="hidden" name="id" value="<?= $product['id'] ?>">
-                                <button>DELETE</button>
+                                <button class="delete-button">DELETE</button>
+                                <?php if(isset($_SESSION['user']['username']) && $_SESSION['user']['role'] === 'admin') :?>
+                                    <a class="edit-button" href="/product-edit?id=<?= $product['id']?>">EDIT</a>
+                                <?php endif;?>
                             </form>
-                        <?php endif; ?>
-                        <?php if(isset($_SESSION['user']['username']) && $_SESSION['user']['role'] === 'admin') :?>
-                        <a href="/product-edit?id=<?= $product['id']?>">EDIT</a>
                         <?php endif;?>
                     </div>
                 </div>
