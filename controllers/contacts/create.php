@@ -27,3 +27,4 @@ forEach($forma as $value){
 
 $db->query($query);
 header("Location: /index");
+exit();

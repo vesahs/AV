@@ -4,6 +4,8 @@ require './Database.php';
 require './Response.php';
 require './Router.php';
 
+session_start();
+
 $router = new Router();
 
 $uri = parse_url($_SERVER["REQUEST_URI"])['path'];

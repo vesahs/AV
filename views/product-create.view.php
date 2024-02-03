@@ -41,10 +41,10 @@ require './views/partials/productsHeader.php' ?>
                         <textarea name="decription" placeholder="Decription" value="<?= $product['price'] ?? '' ?>" cols="60" rows="10"><?= $product['decription'] ?? '' ?><?= $product['price'] ?? '' ?></textarea>
                     </div>
                     <?php if(isset($errors['decription'])) : ?>
-                        <div class="error">
-                            <p class="p-errors"><?= $errors['decription'] ?></p>
-                        </div>
-                        <?php endif; ?>
+                    <div class="error">
+                        <p class="p-errors"><?= $errors['decription'] ?></p>
+                    </div>
+                    <?php endif; ?>
                     <div class="input-box">
                         <label for="category">Choose the product category:</label>
                         <select name="category" id="category">

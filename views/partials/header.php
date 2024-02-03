@@ -30,13 +30,17 @@
                             <li class="<?= urlActive('produktet-sunscreens') ? 'li_active': '' ; ?>"><a href="produktet-sunscreens">Sunscreen</a></li>
                         </ul>
                     </li>
-                    <li><a href="index#contact" id="#contact">Contact us</a></li>
-                    <?php //if ($currentUSerRole === 'admin') : ?>
+                    <li><a href="index#contact" id="#contact">Contact us</a></li>                    
+                    <?php if(isset($_SESSION['user']['username']) && $_SESSION['user']['role'] === 'admin') : ?>
                         <li class="<?= urlActive('dashboard') ? 'li_active': '' ; ?>"><a href="dashboard" id="home">Dashboard</a></li>
-                    <?php //endif;?>
+                    <?php endif; ?>
                 </ul>
-                <a href="login" class="btn">Log in</a>
-                <a href="#">Hello,<?= $_SESSION['name'] ?? ' GUEST' ?></a>
+                <?php if(!isset($_SESSION['user'])): ?>
+                    <a href="/login" class="btn">Log in</a>
+                <?php else: ?>
+                    <a href="/logout" class="btn">Log out</a>
+                <?php endif; ?>
+                <a href="#">Hello,<?= isset($_SESSION['user']) ? $_SESSION['user']['username'] : ' GUEST'?></a>
                 
             </nav>
         </div>

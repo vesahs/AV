@@ -4,11 +4,13 @@ require './views/partials/productsHeader.php' ?>
 <div class="main-content">
     <div class="products-create">
         <div class="title">
-            <h2><?=  $pageTitle ?></h2>
-        </div >
+            <h2><?= $pageTitle ?></h2>
+        </div>
+        <?php if(isset($_SESSION['user']['username']) && $_SESSION['user']['role'] === 'admin') : ?>
         <div class="button-create">
             <a class="btn" href="/create">Create Product</a>
         </div>
+        <?php endif; ?>
     </div>
     <div class="row">
         <?php foreach($products as $product) { ?>    

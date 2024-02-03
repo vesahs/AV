@@ -6,7 +6,6 @@ require './views/partials/productsHeader.php' ?>
     <ul class="dashboard">
         <li><a href="/contacts">Contact us</a></li>
         <li><a href="/products">Products</a></li>
-        <li><a href="/about">About Us</a></li>
     </ul>
     <div class="main"></div>    
 

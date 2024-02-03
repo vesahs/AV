@@ -38,3 +38,8 @@ function authorize($condition, $status = RESPONSE::FOEBIDDEN) {
         abort($status);
     }
 }
+
+function view($path, $attributes = []) {
+    extract($attributes);
+    require $path;
+}

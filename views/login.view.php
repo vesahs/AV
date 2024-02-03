@@ -12,15 +12,15 @@
 <body>
     <div class="login">
         <div class="wrapper">
-            <form method="GET" onsubmit="return validateForm()">
+            <form method="POST" >
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" id="username" included>
+                    <input type="text" placeholder="Username" name="username" id="username" included>
                     <div class="error-message" id="usernameError"></div>
                     <img class="icon" src="./resources/icons/1.png" alt="" width="25px">
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" id="password" included>
+                    <input type="password" placeholder="Password" name="password" id="password" included>
                     <div class="error-message" id="passError"></div>
                     <img class="icon" src="./resources/icons/2.png" alt="" width="25px">
                 </div>
@@ -31,9 +31,9 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn"><a href="#">Login</a></button>
-
-                <div class="register-link">
+                <button type="submit" class="btn">Login</a></button>
+            </form>
+            <div class="register-link">
                     <div class="label">
                         <p>Don't have an account?</p>
                     </div>
@@ -41,7 +41,6 @@
                         <a href="regjistrohu">Regjistrohu</a>
                     </div>
                 </div>
-            </form>
         </div>
     </div>
 

@@ -703,3 +703,11 @@ hr {
 .page-notfound {
     text-align: center;
 }
+
+.p-errors {
+    display: flex;
+    margin: 0;
+    margin-block-start: -4px;
+    margin-inline-start: 25px;
+    color: red;
+}

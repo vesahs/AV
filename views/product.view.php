@@ -15,12 +15,16 @@ require './views/partials/productsHeader.php' ?>
                     <div class="price-dashboard">
                         <p><b>Price:</b><?= $product['price']?> €</p>
                         
-                        <form method="POST">
-                            <input type="hidden" name="_method" value="DELETE">
-                            <input type="hidden" name="id" value="<?= $product['id'] ?>">
-                            <button>DELETE</button>
-                        </form>
+                        <?php if(isset($_SESSION['user']['username']) && $_SESSION['user']['role'] === 'admin') : ?>
+                            <form method="POST">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <input type="hidden" name="id" value="<?= $product['id'] ?>">
+                                <button>DELETE</button>
+                            </form>
+                        <?php endif; ?>
+                        <?php if(isset($_SESSION['user']['username']) && $_SESSION['user']['role'] === 'admin') :?>
                         <a href="/product-edit?id=<?= $product['id']?>">EDIT</a>
+                        <?php endif;?>
                     </div>
                 </div>
                 <div class="product-description"></div>

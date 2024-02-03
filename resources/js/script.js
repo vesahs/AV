@@ -3,17 +3,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     const closeIcon = document.querySelector('.close-icon');
 
-    menuToggle.addEventListener('click', function () {
-        document.body.classList.toggle('menu-open');
-    });
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function () {
+            document.body.classList.toggle('menu-open');
+        });
+    }
 
-    closeIcon.addEventListener('click', function () {
-        document.body.classList.remove('menu-open');
-    });
+    if (closeIcon) {
+        closeIcon.addEventListener('click', function () {
+            document.body.classList.remove('menu-open');
+        });
+    }
 
-    navbar.addEventListener('click', function () {
-        document.body.classList.remove('menu-open');
-    });
+    if (navbar) {
+        navbar.addEventListener('click', function () {
+            document.body.classList.remove('menu-open');
+        });
+    }
 });
 
 let usernameRegex = /^[A-Za-z.-_][a-z]{2,8}$/;
@@ -22,6 +28,7 @@ let passwordRegex = /^[a-zA-Z0-9]+$/;
 let phoneRegex = /^[0-9]{0,14}$/;
 
 function validateForm() {
+    console.log("hini qetu ");
     let usernameInput = document.getElementById('username');
     let usernameError = document.getElementById('usernameError');
     let emailInput = document.getElementById('email');
@@ -50,30 +57,32 @@ function validateForm() {
         passError.innerText = 'Invalid password';
         return false;
     }
-    if (!phoneRegex.test(phoneInput.value)) {
+
+    if (phoneInput.value === '' || !phoneRegex.test(phoneInput.value)) {
         phoneError.innerText = 'Invalid phone number';
         return false;
     }
 
-    alert('Name and email was corect!');
 }
 
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    loop: true,
-    effect: 'fade',
-    speed: 1000,
-    autoplay: {
-      delay: 5000,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
+if (document.querySelector('.swiper-container')) {
+    console.log("hini te swiperi");
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        loop: true,
+        effect: 'fade',
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
 
