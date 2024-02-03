@@ -1,14 +1,12 @@
-<?php  
-    require './controllers/Products.php';
-    $productetMoist = new Products();
-    require './views/partials/productsHeader.php'; ?>
+<?php 
+require './views/partials/productsHeader.php' ?>
 
 <div class="main-content">
     <div class="page-title">
-        <h2><?=  $productetMoist->pageTitle ?></h2>
+        <h2><?=  $pageTitle ?></h2>
     </div>
     <div class="row">
-        <?php foreach($productetMoist->getProductsByCategory('Moisturizers') as $product) { ?>    
+        <?php foreach($products as $product) { ?>    
         <div class="product">
             <div class="image">
                 <img src="<?= $product['image']?>" alt="<?= $product['image']?>" class="img">
@@ -16,7 +14,7 @@
             <div class="description">
                 <div class="title-price">
                     <div class="title">
-                        <h3><?= $product['title']?></h3>
+                        <h3><a href="/product?id=<?= $product['id'] ?>"><?= $product['title']?></a></h3>
                     </div>
                     <div class="price">
                         <p><b>Price:</b><?= $product['price']?> €</p>
@@ -29,4 +27,6 @@
         <?php } ?>
     </div>
 </div>
+
+
 <?php require './views/partials/productsFooter.php' ?>

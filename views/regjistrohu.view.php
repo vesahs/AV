@@ -21,7 +21,7 @@
                     <img class="icon" src="./resources/icons/1.png" alt="" width="25px">
                 </div>
                 <div class="input-box">
-                    <input name="password" placeholder="Password" id="password">
+                    <input type="password" name="password" placeholder="Password" id="password">
                     <div class="error-message" id="passError"></div>
                     <img class="icon" src="./resources/icons/2.png" alt="" width="25px">
                 </div>

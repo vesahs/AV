@@ -31,9 +31,13 @@
                         </ul>
                     </li>
                     <li><a href="index#contact" id="#contact">Contact us</a></li>
-                    <li class="<?= urlActive('dashboard') ? 'li_active': '' ; ?>"><a href="dashboard" id="home">Dashboard</a></li>
+                    <?php //if ($currentUSerRole === 'admin') : ?>
+                        <li class="<?= urlActive('dashboard') ? 'li_active': '' ; ?>"><a href="dashboard" id="home">Dashboard</a></li>
+                    <?php //endif;?>
                 </ul>
                 <a href="login" class="btn">Log in</a>
+                <a href="#">Hello,<?= $_SESSION['name'] ?? ' GUEST' ?></a>
+                
             </nav>
         </div>
     </div>

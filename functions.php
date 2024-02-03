@@ -23,3 +23,18 @@ function connectDb() {
     
     return new Database($dataBase, $host, $port, $dbName, $dbUser, $password);
 }
+
+function abort($error = 404){
+    if($error === 404) {
+        require './views/404.php';
+    } else if ($error === 403) {
+        require './views/403.php';
+    }
+    die();
+}
+
+function authorize($condition, $status = RESPONSE::FOEBIDDEN) {
+    if(! $condition){
+        abort($status);
+    }
+}

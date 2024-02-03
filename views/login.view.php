@@ -12,7 +12,7 @@
 <body>
     <div class="login">
         <div class="wrapper">
-            <form action="" method="get" onsubmit="return validateForm()">
+            <form method="GET" onsubmit="return validateForm()">
                 <h1>Login</h1>
                 <div class="input-box">
                     <input type="text" placeholder="Username" id="username" included>

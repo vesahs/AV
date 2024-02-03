@@ -2,7 +2,7 @@
     <div class="container">
         <div class="signup">
             <div class="wrapper">
-                <form action="/contact" method="post">
+                <form method="POST">
                     <h1>Contact Form</h1>
                     <h3>Write us a message: </h3>
                     <div class="input-box">

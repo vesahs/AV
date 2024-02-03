@@ -167,7 +167,7 @@ p {
 .image {
     border: 1.5px solid;
     border-radius: 15px;
-    
+
 }
 
 .logo {
@@ -312,6 +312,14 @@ footer {
 
 .product .image:hover {
     transform: translateY(-10px);
+    box-shadow: 10px 10px 10px antiquewhite;
+}
+
+.product>.description>p:hover {
+    box-shadow: 10px 10px 10px antiquewhiteblack;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .li_active {
@@ -337,4 +345,128 @@ footer {
 
 .main-pannel {
     flex-grow: 9;
+}
+
+.products-create {
+    width: 60%;
+    justify-content: space-between;
+}
+
+.button-create {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #9F8C76;
+    border-radius: 5px;
+}
+
+.button-create:hover {
+    background-color: white;
+}
+
+.button-create>a {
+    display: flex;
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.price-dashboard {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price-dashboard>form {
+    display: flex;
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.dashboard {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.dashboard>li {
+    padding: 20px;
+    border: 1px solid brown;
+    box-shadow: 1px 1px 1px black;
+    background-color: #9F8C76;
+
+}
+
+.dashboard>li>a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.input-box {
+    background-color: #F0E4D4;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 255);
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.input-box>textarea {
+    border: none;
+    background-color: transparent;
+    color: black;
+
+}
+
+.input-box>input {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+}
+
+.upload>.input-box {
+    width: 100%;
+}
+
+.button-create {
+    justify-content: end;
+}
+
+.form-create {
+    flex-direction: column;
+}
+
+.p-errors {
+    display: flex;
+    margin: 0;
+    margin-block-start: -4px;
+    margin-inline-start: 25px;
+    color: red;
 }

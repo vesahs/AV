@@ -1,23 +1,47 @@
-<?php 
-$uri = parse_url($_SERVER["REQUEST_URI"])['path'];
+<?php
 
-$routes = [
-    '/' => './controllers/Home.php',
-    '/index' => './controllers/Home.php',
-    '/about' => './controllers/About.php',
-    '/contact'=>'./controllers/Contact.php',
-    '/produktet-moisturizers'=> './views/produktet-moisturizers.php',
-    '/produktet-toners' => './views/produktet-toners.php',
-    '/produktet-FaceWashes'=> './views/produktet-FaceWashes.php',
-    '/produktet-Body'=> './views/produktet-Body.php',
-    '/produktet-sets'=> './views/produktet-sets.php',
-    '/produktet-sunscreens' => './views/produktet-sunscreens.php',
-    '/login' => './views/login.php',
-    '/regjistrohu' => './controllers/Regjistrohu.php',
-];
+class Router {
 
-if(array_key_exists($uri,$routes)) {
-    require $routes[$uri];
-} else {
-    require './views/404.php';
+    protected $routes = [];
+
+    public function add($method, $url, $controller){
+        $this->routes[] = [
+            'url' => $url,
+            'controller' => $controller,
+            'method' => $method
+        ];
+    }
+
+    public function get($url, $controller){
+        $this->add('GET', $url, $controller);
+    }
+
+    public function post($url, $controller){
+        $this->add('POST', $url, $controller);
+    }
+
+
+    public function put($url, $controller){
+        $this->add('PUT', $url, $controller);
+    }
+
+    public function patch($url, $controller){
+        $this->add('PATCH', $url, $controller);
+
+    }
+
+    public function delete($url, $controller){
+        $this->add('DELETE', $url, $controller);
+    }
+
+    public function route($url, $method) {
+        foreach ($this->routes as $route) {
+            if($route['url'] === $url && $route['method'] === strtoupper($method)){
+                return require($route['controller']);
+            }
+        }
+
+        abort();
+    }
+
 }

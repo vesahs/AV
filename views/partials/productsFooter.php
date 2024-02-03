@@ -19,12 +19,12 @@
         <div class="footer-column">
             <h4>Products</h4>
             <ul class="footer-menu">
-                <li><a href="#produktet-moisturizers.php">Moisturizers</a></li>
-                <li><a href="produktet-toners.php">Toners</a></li>
-                <li><a href="produktet-FaceWashes.php">Face Washes</a></li>
-                <li><a href="produktet-Body.php">Body Care</a></li>
-                <li><a href="Produktet-sets.php">Sets </a></li>
-                <li><a href="produktet-sunscreens.php">Sunscreen</a></li>
+                <li><a href="/produktet-moisturizers">Moisturizers</a></li>
+                <li><a href="/produktet-toners">Toners</a></li>
+                <li><a href="/produktet-FaceWashes">Face Washes</a></li>
+                <li><a href="/produktet-Body">Body Care</a></li>
+                <li><a href="/Produktet-sets">Sets </a></li>
+                <li><a href="/produktet-sunscreens">Sunscreen</a></li>
             </ul>
         </div>
     </div>

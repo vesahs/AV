@@ -1,14 +1,12 @@
 <?php 
-require './controllers/Products.php';
-$productetBodyCare = new Products();
 require './views/partials/productsHeader.php' ?>
 
 <div class="main-content">
     <div class="page-title">
-        <h2><?=  $productetBodyCare->pageTitle ?></h2>
+        <h2><?=  $pageTitle ?></h2>
     </div>
     <div class="row">
-        <?php foreach($productetBodyCare->getProductsByCategory('BodyCare') as $product) { ?>    
+        <?php foreach($products as $product) { ?>    
         <div class="product">
             <div class="image">
                 <img src="<?= $product['image']?>" alt="<?= $product['image']?>" class="img">
@@ -16,7 +14,7 @@ require './views/partials/productsHeader.php' ?>
             <div class="description">
                 <div class="title-price">
                     <div class="title">
-                        <h3><?= $product['title']?></h3>
+                        <h3><a href="/product?id=<?= $product['id'] ?>"><?= $product['title']?></a></h3>
                     </div>
                     <div class="price">
                         <p><b>Price:</b><?= $product['price']?> €</p>

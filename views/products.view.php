@@ -1,25 +1,28 @@
 <?php 
-    require './controllers/Products.php';
-    $productetToners = new Products();
-    require './views/partials/productsHeader.php' ?>
+require './views/partials/productsHeader.php' ?>
 
 <div class="main-content">
-    <div class="page-title">
-        <h2><?= $productetToners->pageTitle ?> </h2>
+    <div class="products-create">
+        <div class="title">
+            <h2><?=  $pageTitle ?></h2>
+        </div >
+        <div class="button-create">
+            <a class="btn" href="/create">Create Product</a>
+        </div>
     </div>
     <div class="row">
-        <?php foreach($productetToners->getProductsByCategory('Toners') as $product) {?>
+        <?php foreach($products as $product) { ?>    
         <div class="product">
             <div class="image">
-                <img src="<?= $product['image'] ?>" alt="TonerForOilySkin" class="img">
+                <img src="<?= $product['image']?>" alt="<?= $product['image']?>" class="img">
             </div>
             <div class="description">
                 <div class="title-price">
                     <div class="title">
-                        <h3><?= $product['title']?></h3>
+                        <h3><a href="/product?id=<?= $product['id'] ?>"><?= $product['title']?></a></h3>
                     </div>
                     <div class="price">
-                        <p><b>Price:</b> <?= $product['price'] ?> €</p>
+                        <p><b>Price:</b><?= $product['price']?> €</p>
                     </div>
                 </div>
                 <div class="product-description"></div>
@@ -29,5 +32,6 @@
         <?php } ?>
     </div>
 </div>
+
 
 <?php require './views/partials/productsFooter.php' ?>
