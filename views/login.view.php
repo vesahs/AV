@@ -19,12 +19,21 @@
                     <div class="error-message" id="usernameError"></div>
                     <img class="icon" src="./resources/icons/1.png" alt="" width="25px">
                 </div>
+                <?php if(isset($errors['username'])) : ?>
+                <div class="error">
+                    <p class="p-errors"><?= $errors['username'] ?></p>
+                </div>
+                <?php endif; ?>
                 <div class="input-box">
                     <input type="password" placeholder="Password" name="password" id="password" included>
                     <div class="error-message" id="passError"></div>
                     <img class="icon" src="./resources/icons/2.png" alt="" width="25px">
                 </div>
-
+                <?php if(isset($errors['password'])) : ?>
+                <div class="error">
+                    <p class="p-errors"><?= $errors['password'] ?></p>
+                </div>
+                <?php endif; ?>
                 <div class="remember-forgot">
                     <div class="label">
                         <p><input type="checkbox">Remember me</p>

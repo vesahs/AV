@@ -20,7 +20,6 @@ if(!$result) {
 }
 
 if(empty($errors)){
-
     $_SESSION['user'] = [ 
         'username' => $result['username'],
         'role' => $result['role'],
@@ -28,4 +27,8 @@ if(empty($errors)){
 
     header('location: /index');
     exit();
+} else {
+    view('./views/login.view.php', [
+        'errors' => $errors
+    ]);
 }

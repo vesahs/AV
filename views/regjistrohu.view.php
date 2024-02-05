@@ -12,9 +12,8 @@
 <body>
     <div class="signup">
         <div class="wrapper">
-            <form method="POST" onsubmit="//return validateForm()">
+            <form method="POST" onsubmit="return validateForm()">
                 <h1>Sign Up</h1>
-                <?php //dd($user);?>
                 <div class="input-box">
                     <input value="<?= isset($user) ? $user['username'] : '' ?>" name="username" placeholder="Username" id="username">
                     <div class="error-message" id="usernameError"></div>

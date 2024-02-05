@@ -8,6 +8,10 @@ $productsBaseDirectory = './controllers/product';
 $router->get('/', './controllers/Home.php');
 $router->get('/index', './controllers/Home.php');
 $router->get('/about', './controllers/about.php');
+
+/**
+ * Auth
+ */
 $router->get('/login', './controllers/regjistrohu/login.php')->only('basic');
 $router->post('/login', './controllers/regjistrohu/login.php');
 $router->get('/logout', './controllers/regjistrohu/logout.php');
@@ -26,7 +30,7 @@ $router->get('/produktet-sunscreens', $productsBaseDirectory . '/products-catego
 
 /**
  * Dashboard Product CRUD
- */
+*/
 $router->get('/dashboard', './controllers/Dashboard.php')->only('admin');
 $router->get('/products', $productsBaseDirectory . '/index.php')->only('admin');
 $router->get('/product', $productsBaseDirectory . '/show.php');

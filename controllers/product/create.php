@@ -15,23 +15,23 @@ if($_SERVER["REQUEST_METHOD"] === 'POST'){
         $errors['image'] = 'file exists';
     }
 
-    if(Validator::isEmptyString($product['title'])) {
+    if(!Validator::isEmptyString($product['title'])) {
         $errors['title'] = "title is required";
     }
 
-    if(Validator::isEmptyString($product['price'] || Validator::isNumber($product['price']))) {
+    if(!Validator::isEmptyString($product['price'] || Validator::isNumber($product['price']))) {
         $errors['price'] = "price is required and it should be a number";
     }
 
-    if(Validator::isEmptyString($product['decription'])) {
+    if(!Validator::isEmptyString($product['decription'])) {
         $errors['decription'] = "decription is required";
     }
 
-    if(Validator::isEmptyString($_FILES["image"]["name"])) {
+    if(!Validator::isEmptyString($_FILES["image"]["name"])) {
         $errors['image'] = "image is required";
     }
 
-    if(Validator::isEmptyString($product['category'])) {
+    if(!Validator::isEmptyString($product['category'])) {
         $errors['category'] = "category is required";
     }
 
